@@ -18,6 +18,7 @@ We are pulling data from Baseball Prospectus, MLB.com, and ESPN.com to get playe
 
 Below is our current flowchart for scoping out the work
 
+![MLB WARP Salary Flowchart](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/Screen%20Shot%202022-03-23%20at%205.02.26%20PM.png)
 
 ### Communction
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
