@@ -11,6 +11,13 @@ Neither WARP scores nor team salary are reliable predictors of an MLB team makin
 - Python
 - AWS
 - Tabluea
+- Lucid Chart
+- Google Slides (for presentation)
+
+We are pulling data from Baseball Prospectus, MLB.com, and ESPN.com to get player salaries, team standings, and WARP scores for players.
+
+Below is our current flowchart for scoping out the work
+
 
 ### Communction
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
