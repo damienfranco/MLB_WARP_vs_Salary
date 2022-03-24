@@ -10,7 +10,7 @@ Neither WARP scores nor team salary are reliable predictors of an MLB team makin
 ### Technology and Methodology
 - Python
 - AWS
-- Tabluea
+- Tableau
 - Lucid Chart
 - Google Slides (for presentation)
 
@@ -20,6 +20,6 @@ Below is our current flowchart for scoping out the work
 
 ![MLB WARP Salary Flowchart](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/Screen%20Shot%202022-03-23%20at%205.02.26%20PM.png)
 
-### Communction
+### Communcation
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
 
