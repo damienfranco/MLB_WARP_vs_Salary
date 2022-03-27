@@ -1,0 +1,33 @@
+--Select All
+SELECT * FROM team_payroll_ws_playoffs;
+
+--Updating ws_wins nulls to zero
+UPDATE team_payroll_ws_playoffs
+SET ws_win=0
+WHERE ws_win IS NULL;
+
+--CHECKING TO SEE IF ALL WS WINNERS SINCE 2000 ARE IN THE DATA
+SELECT * FROM team_payroll_ws_playoffs
+WHERE ws_win = '1' 
+ORDER BY year ASC;
+
+--UPDATING PLAYOFFS NULLS TO ZERO
+UPDATE team_payroll_ws_playoffs
+SET playoffs=0
+WHERE playoffs IS NULL;
+
+--REMOVING DATA PRIOR TO 2000
+DELETE FROM team_payroll_ws_playoffs 
+WHERE year<'2000';
+
+--Data Check
+SELECT * FROM team_payroll_ws_playoffs
+ORDER BY year ASC;
+
+--Removing data after 2021
+DELETE FROM team_payroll_ws_playoffs 
+WHERE year>'2021';
+
+--Data Check
+SELECT * FROM team_payroll_ws_playoffs
+ORDER BY year ASC;
