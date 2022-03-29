@@ -4,6 +4,13 @@
 
 Our initial question was whether we could predict Major League Baseball Team success (as defined by making the playoffs) by looking at their overall team salary. And as we dug through the data we started looking at a possible correlation between WARP scores and winning records.
 
+## How Did We Get Here?
+
+### WAR...What is it Good For?
+
+![War Calc](https://github.com/damienfranco/MLB_WARP_vs_Salary/tree/main/Presentation_Resources/WAR-Formulas.png)
+
+
 ## Our Null Hypothesis: 
 Neither WARP scores nor team salary are reliable predictors of an MLB team making the playoffs.
 
