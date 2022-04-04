@@ -1,0 +1,92 @@
+ALTER TABLE pitching
+RENAME pitching_intentional_walks TO pitched_intentional_walks;
+
+DROP TABLE IF EXISTS player_stats;
+SELECT f.season,
+	f.full_name,
+	f.team_id,
+	f.player_id,
+	f.team_name,
+	h.pos,
+	f.assists,
+	f.putouts,
+	f.errors,
+	f.chances,
+	f.fielding,
+	f.innings,
+	f.games,
+	f.games_started,
+	f.double_plays,
+	f.triple_plays,
+	f.throwing_errors,
+	h.ground_outs,
+	h.air_outs,
+	h.runs,
+	h.doubles,
+	h.triples,
+	h.home_runs,
+	h.strike_outs,
+	h.base_on_balls,
+	h.intentional_walks,
+	h.average,
+	h.at_bats,
+	h.obp,
+	h.slg,
+	h.ops,
+	h.stolen_bases,
+	h.caught_stealing,
+	h.ground_into_double_play,
+	h.number_of_pitches,
+	h.plate_appearances,
+	h.total_bases,
+	h.rbi,
+	h.left_on_base,
+	h.sac_bunts,
+	h.sac_flies,
+	p.pitched_ground_outs,
+	p.pitched_air_outs,
+	p.pitched_runs,
+	p.pitched_doubles,
+	p.pitched_triples,
+	p.pitched_home_runs,
+	p.pitched_strike_outs,
+	p.pitched_base_on_balls,
+	p.pitched_intentional_walks,
+	p.pitched_hits,
+	p.pitcher_average,
+	p.saves,
+	p.save_opportunities,
+	p.holds,
+	p.blown_saves,
+	p.earned_runs,
+	p.whip,
+	p.batters_faced,
+	p.outs,
+	p.games_pitched,
+	p.complete_games,
+	p.shutouts,
+	p.pitcher_strikes,
+	p.hit_batsmen,
+	p.balks,
+	p.wild_pitches,
+	p.pickoffs,
+	p.pitched_total_bases,
+	p.pitches_per_inning,
+	p.games_finished,
+	p.walks_per_9_inn,
+	p.inherited_runners,
+	p.inherited_runners_scored,
+	p.pitched_sac_bunts,
+	p.pitched_sac_flies
+INTO player_stats
+FROM hitting AS h
+LEFT JOIN fielding AS f
+ON ((f.season = h.season) AND (f.player_id = h.player_id))
+LEFT JOIN pitching AS p
+ON ((f.season = p.season)) AND ((f.player_id = p.player_id))
+ORDER BY f.team_id;
+
+
+
+
+
