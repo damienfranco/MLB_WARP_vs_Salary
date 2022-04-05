@@ -5,6 +5,16 @@
 Our initial question was whether we could predict Major League Baseball Team success (as defined by making the playoffs) by looking at their overall team salary. And as we dug through the data we started looking at a possible correlation between WARP scores and winning records.
 
 ## How Did We Get Here?
+2022 highlighted to the average fan that there was a discrepancy between teams trying to win and those who were not. The main differentiator? Money. 
+
+In November of 2021, Major League Baseball's Collective Bargaining Agreement (CBA) expired, requiring the MLB Players Assocation (MLBPA) to have to renegotiate the with the owners in the MLB on fair salaries and rules. 
+
+Every since the Billy Beane Moneyball A's, owners/General managers in baseball have realized that one may not need to spend to win baseball games. The following items were discovered:
+- Pay for players has historically been given based on past performance. 
+- Rookie players under the prior CBA were under team controll for *7 years* after the reached MLB. These players were held at league minimum salaries for the 7 years with the final 3 to 4 years allowing for arbitration raises still under market value
+- With the adjustment in analysis of when players could get paid, free agents past their prime saw drops in their ability to make "premium money" by the time they reached free agency
+
+Teams began to lose or "tank" in order to get as many top picks in the drafts for multiple seasons prior to trying to win to create low salaried, competive windows. 
 
 ### WAR...What is it Good For?
 
