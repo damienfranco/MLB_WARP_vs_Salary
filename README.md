@@ -18,7 +18,7 @@ Teams began to lose or "tank" in order to get as many top picks in the drafts fo
 
 ### WAR...What is it Good For?
 
-![War Calc](https://github.com/damienfranco/MLB_WARP_vs_Salary/tree/main/Presentation_Resources/WAR-Formulas.png)
+![War Calc](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/Presentation_Resources/WAR-Formulas.png)
 
 
 ## Our Null Hypothesis: 
