@@ -62,3 +62,6 @@ Our data needs included the following:
 
 ## Communcation
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
+
+## Machine Learning
+The team is using a pair or machine learning sections in order to determine if success is tied more closely to team payroll, WARP, or another statistic.  The first model we used was a principal component analysis which determined inter-relations between variables in the dataset.  Specifically, it helped us create a subset of variables from our larger dataset which we could apply towards the next machine learning module.  We will then complete a multiple linear regression using this subset of variables to determine which variables in the subset affect success in the major leagues.  
