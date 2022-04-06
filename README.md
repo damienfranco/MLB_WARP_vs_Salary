@@ -1,4 +1,4 @@
-# WARP vs Salaray - A Dive into Player Value and Team Spending in MLB
+# WARP vs Salary - A Dive into Player Value and Team Spending in MLB
 
 ## Which Predicts MLB Team Success Better? WARP vs Team Salary
 
