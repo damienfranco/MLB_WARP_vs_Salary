@@ -64,4 +64,16 @@ Our data needs included the following:
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
 
 ## Machine Learning
-The team is using a pair or machine learning sections in order to determine if success is tied more closely to team payroll, WARP, or another statistic.  The first model we used was a principal component analysis which determined inter-relations between variables in the dataset.  Specifically, it helped us create a subset of variables from our larger dataset which we could apply towards the next machine learning module.  We will then complete a multiple linear regression using this subset of variables to determine which variables in the subset affect success in the major leagues.  
+
+The team is using a pair or machine learning sections in order to determine if success is tied more closely to team payroll, WARP, or another statistic.  
+
+### Preliminary Data Preprocessing
+After the construction of our database, we had more than 60 hitting, pitching, and fielding statistics that we will use measuer the success of each athlete on each team in Major League Baseball over the past 20 years. We will total each statistic and group them by each of the 30 teams from the years 2000 - 2019.  We also need to create a success factor to determine how well a team performed over the year.  That success factor will be our Y Variable with the retotaled 
+
+### Preliminary Feature Engineering
+The first model we used was a principal component analysis which determined inter-relations between variables in the dataset. Specifically, it helped us create a subset of variables from our larger dataset which we could apply towards the next machine learning module.  Once we have our subset, we will apply that data intoa  Random Forest Identifier which will allow us to determine the level at which each x variable affects the Y Variable.
+### How is Data Split Between Training and Testing Groups
+We use sklearn to assign training and testing values to our X and Y variables, therefore, splitting them.
+
+### Explanation of model choice
+We believe that a random foreest identifier is appropriate for this project beacuse it produces better results, works well on large datasets, and can work with missing data by creating estimates for them. However, they can be limited by their inability to predict data outside of their current dataset. This is fine because we are not looking to predict future results.  We are only looking to determine which variables are most effective in determining our Y variables.
