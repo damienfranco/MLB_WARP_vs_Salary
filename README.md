@@ -53,11 +53,12 @@ Wins Above Replacement Player, or **WARP** for short is a new age statistic to t
 
 ![War Calc](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/Presentation_Resources/WAR-Formulas.png)
 
-The above looks like a lot, doesnt it? So what does it mean? In the simplest termas available:
+The above looks like a lot, doesnt it? So what does it mean? 
+#### WARP MADE EASY
 
-<img align="left" width="100" height="100" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/Presentation_Resources/WAR%20Chart.webp">
+<img align="left" width="150" height="150" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/Presentation_Resources/WAR%20Chart.webp">
+**WARP** measures a players value in all aspects of the game in order to determine if how many "wins" that player is worth on the filed vs the average player: 
 
-**WARP** measures a players value in all aspects of the game in order to determine if how many "wins" that player is worth on the filed vs the average player. 
 - Negative WARP means a player is costing you wins
 - 0 WARP means the player is average
 - Any other WARP score means the player is above average and helping your baseball team succeed.
