@@ -2,7 +2,9 @@
 ## Table of Contents
 <details>
 <summary>"Click to expand"</summary>
-
+    
+<img align="left" width="450" height="450" src="https://s22927.pcdn.co/wp-content/uploads/2020/01/world-series-trophy.jpg">
+    
 - [**How Did We Get Here?**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#how-did-we-get-here)
     - [*CBA Hooray?*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#cba-hooray)
     - [*WARP...What is it Good For?*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#warpwhat-is-it-good-for)
