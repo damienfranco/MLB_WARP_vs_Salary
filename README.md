@@ -3,23 +3,23 @@
 <details>
 <summary>"Click to expand"</summary>
 
-- **How Did We Get Here?**
-    - *CBA Hooray?*
-    - *WARP...What is it Good For?*
-- **Questions We Are Looking to Answer**
-- **Our Null Hypothesis**
-- **Technology and Methodology**
-- **Flow Chart**
-- **Data**
-    - *Data Caveats*
-    - *Data Sources*
-- **Communication**
-- **Machine Learning**
-    - *Preliminry Data Preprocessing*
-    - *Preliminary Feature Engineering*
-    - *How is Data Split Between Training and Testing Groups*
-    - *Explanation of model choice*
-- **Sources**
+- [**How Did We Get Here?**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#how-did-we-get-here)
+    - [*CBA Hooray?*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#cba-hooray)
+    - [*WARP...What is it Good For?*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#warpwhat-is-it-good-for)
+- [**Questions We Are Looking to Answer**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#questions-we-are-looking-to-answer)
+- [**Our Null Hypothesis**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#our-null-hypothesis)
+- [**Technology and Methodology**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#technology-and-methodology)
+- [**Flow Chart**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#flow-chart)
+- [**Data**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#data)
+    - [*Data Sources*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#data-sources)
+    - [*Data Caveats*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#data-caveats)
+- [**Communication**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#communication)
+- [**Machine Learning**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#machine-learning)
+    - [*Preliminary Data Preprocessing*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.preliminary-data-preprocessing)
+    - [*Preliminary Feature Engineering*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#preliminary-feature-engineering)
+    - [*How is Data Split Between Training and Testing Groups*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#how-is-data-split-betweein-training-and-testing-groups)
+    - [*Explanation of model choice*](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#explanation-of-model-choice)
+- [**Sources**](https://github.com/damienfranco/MLB_WARP_vs_Salary/edit/main/README.md#sources)
 
 
 </details>
