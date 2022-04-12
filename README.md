@@ -118,7 +118,7 @@ ETL Figure 2: Salary dataset
 ETL Figure 3: Extra rows created containing duplicated salary data but having unique stats. In `season` 2016, Josh Fields appears twice, and has the same salary information but different pitching stats.
 
 ![Dropping Duplicates](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/cleaning_duplicates.png)
-ETL Figure 4: The `groupby()` function grouped the final joined table by their names, ids, teams, positions, and season, and the `.agg()` function took a dictionary defining each column as the key, and whether to keep the first (or last) record or sum/average the records together as the value.
+ETL Figure 4: The `groupby()` function grouped the final joined table by their names, ids, teams, positions, and season. The `.agg()` function took a dictionary defining each column as the key, and whether to keep the first (or last) record or sum/average the records together as the value.
 
 
 ### Data Caveats
