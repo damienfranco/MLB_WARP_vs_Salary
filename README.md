@@ -172,8 +172,8 @@ The team is using a pair or machine learning sections to determine if success is
 ### Data Preprocessing
 
 After the construction of our database, we had more than 30 hitting, pitching, and fielding statistics that we will use measure the success of each athlete on each team in Major League Baseball over the past 20 years. We will total each statistic and group them by each of the 30 teams from the years 2000 - 2019*. We will utilize wins and playoff appearances as our Y variable to determine the success of the team.
-*See[Data Caveats](#data-caveats)*
 
+*See[Data Caveats](#data-caveats)*
 
 ### Feature Engineering
 
@@ -213,8 +213,6 @@ One step further, we also determine runs were a more effective variable than tea
 ![runsrank](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/runs_features_rank.png) 
 
 *See [Data Caveats](#data-caveats)*
-
-## Visualization
 
 
 ## Sources
