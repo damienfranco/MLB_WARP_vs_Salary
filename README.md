@@ -113,7 +113,7 @@ Our data needs included the following:
 ### ETL
 The only free option for detailed MLB salary data that we found was on [Baseball Prospectus](https://legacy.baseballprospectus.com/compensation/), which was extracted using a webscraper built with BeautifulSoup. The player stats were not easily accessed using a webscraper, so the stats were extracted using the [MLB Stats API](https://statsapi.mlb.com). The stats had to be requested in three different groups, hitting, fielding, and pitching, because of how the endpoint was structured. The stats datasets were joined and cleaned to match the format of the salary dataset using regex replacements.
 
-The stats and salary datasets came from two completely sources, using completely separate processes for collection, and did not contain a common primary key that they could be joined on. The stats dataset contained a unique `player_id` (ETL Figure 1), that was absent in the salary data (ETL Figure 2). The tables were inner joined by player name, team name, and year. Extra records  were produced, either created by the lack of a primary key to join on, or by differences in how the two sources organized their data (ETL Figure 3). Simply using the `.drop_duplicates()` function from the Pandas library would not work because of the non-duplicated stats. The columns in the final dataset were grouped by the strings, and the `.agg()` function was applied to in order to keep the player salary data constant, but sum/average their stats (ETL Figure 4). This eliminated the duplicated player entries, while keeping their stats accurate.
+The stats and salary datasets came from two completely sources, using separate processes for collection, and did not contain a common primary key that they could be joined on. The stats dataset contained a unique `player_id` (ETL Figure 1), that was absent in the salary data (ETL Figure 2). The tables were inner joined by player name, team name, and year. Extra records were produced, either created by the lack of a primary key to join on, or by differences in how the two sources organized their data (ETL Figure 3). Simply using the `.drop_duplicates()` function from the Pandas library would not work because of the non-duplicated stats. The columns in the final dataset were grouped by the strings, and the `.agg()` function was applied to in order to keep the player salary data constant, but sum/average their stats (ETL Figure 4). This eliminated the duplicated player entries, while keeping their stats accurate.
 
 **ETL Figure 1: Stats dataset**
 <p align="center">
@@ -144,15 +144,15 @@ The `groupby()` function grouped the final joined table by their names, ids, tea
 
 
 ### Data Caveats
-- We were unable to scrape data for the "Florida Marlins." The franchise was established as an expansion team in 1993. They rebranded to the Miami Marlins at the start of the 2012 season. They were both a playoff team and World Series winner in 1997 and 2003.
-- Given the data we were able to access, our analysis is of player stats and payroll from 2000 to 2021. 
+- We were unable to scrape data for the "Florida Marlins." The franchise was established as an expansion team in 1993. They rebranded to the Miami Marlins at the start of the 2012 season. They were both a playoff team and World Series winner in 1997 and 2003. WARP and Salary information was added via a CSV from Baseball Reference. 
+- Given the data we were able to access, our analysis is of player stats and payroll from 2000 to 2019. 2020 was omitted due to the nature of the shortened season. Not all finalized data for 2021 was available for scraping. 
 - There were 8 postseason teams from 2000-2011. In 2012, MLB expanded the Wild Card round to have the top two non-division winners to play each other in a 1 game playoff. This increases our playoff teams to 10 for data starting in 2012. 
 - In 2020, MLB had a COVID shortened season of 60 games with expanded playoffs. 16 teams made the playoffs this year: 2 teams from each division in the American League and National League, then 2 additional Wild Card teams from each league. The first-round format for the playoffs was a best of 3 series. The remainder of the playoff game formatting remained the same. 
 
 
 ![MLB Salary WARP database](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/Screen%20Shot%202022-03-23%20at%207.40.38%20PM.png)
 
-## Communcation
+## Communication
 
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
 
@@ -163,7 +163,7 @@ The team is using a pair or machine learning sections to determine if success is
 ### Data Preprocessing
 
 After the construction of our database, we had more than 30 hitting, pitching, and fielding statistics that we will use measure the success of each athlete on each team in Major League Baseball over the past 20 years. We will total each statistic and group them by each of the 30 teams from the years 2000 - 2019*. We will utilize wins and playoff appearances as our Y variable to determine the success of the team.
-*See Data Caveats
+*See #data-caveats*
 
 
 ### Feature Engineering
@@ -203,7 +203,7 @@ One step further, we also determine runs were a more effective variable than tea
 
 ![runsrank](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/runs_features_rank.png) 
 
-*See Data Caveats
+*See #data-caveats*
 
 ## Sources
 [^1]: CBA Negotiations - https://www.bostonglobe.com/2021/11/03/sports/how-will-cba-negotiations-affect-baseballs-offseason/
