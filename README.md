@@ -3,6 +3,14 @@
 </p>
 
 # WARP vs Salary - A Dive into Player Value and Team Spending in MLB
+
+## Visualization
+[**Click Here For Our Visualization**](https://public.tableau.com/app/profile/damien.franco/viz/MLBWARPvsSalary/WARPSalaryTotals)
+
+<p align="center">
+  <img width="1024" height="576" src="https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w1024/mlb/m33oxultuhrzukqctxaf">
+</p>
+
 ## Table of Contents
 
 <details>
@@ -28,6 +36,7 @@
     - [*Preliminary Feature Engineering*](#preliminary-feature-engineering)
     - [*How is Data Split Between Training and Testing Groups*](#how-is-data-split-betweein-training-and-testing-groups)
     - [*Explanation of model choice*](#explanation-of-model-choice)
+- [Visualization](#visualization)
 - [**Sources**](#sources)
 
 </details>
@@ -163,7 +172,7 @@ The team is using a pair or machine learning sections to determine if success is
 ### Data Preprocessing
 
 After the construction of our database, we had more than 30 hitting, pitching, and fielding statistics that we will use measure the success of each athlete on each team in Major League Baseball over the past 20 years. We will total each statistic and group them by each of the 30 teams from the years 2000 - 2019*. We will utilize wins and playoff appearances as our Y variable to determine the success of the team.
-*See #data-caveats*
+*See[Data Caveats](#data-caveats)*
 
 
 ### Feature Engineering
@@ -203,7 +212,10 @@ One step further, we also determine runs were a more effective variable than tea
 
 ![runsrank](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/runs_features_rank.png) 
 
-*See #data-caveats*
+*See [Data Caveats](#data-caveats)*
+
+## Visualization
+
 
 ## Sources
 [^1]: CBA Negotiations - https://www.bostonglobe.com/2021/11/03/sports/how-will-cba-negotiations-affect-baseballs-offseason/
