@@ -132,7 +132,7 @@ The stats and salary datasets came from two completely sources, using separate p
 **ETL Figure 2: Salary dataset**
 
 <p align="center">
-  <img width="470" height="202" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/player_salaries.png">
+  <img width="702" height="161" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/player_salaries.png">
 </p>
 
 **ETL Figure 3:**
