@@ -8,27 +8,27 @@
 <details>
 <summary>"Click to expand"</summary>
     
-<img align="left" width="480" height="480" src="https://s22927.pcdn.co/wp-content/uploads/2020/01/world-series-trophy.jpg">
-    
-- [**How Did We Get Here?**](https://github.com/damienfranco/MLB_WARP_vs_Salary#which-predicts-mlb-team-success-better-warp-vs-team-salary)
-    - [*CBA Hooray?*](https://github.com/damienfranco/MLB_WARP_vs_Salary#cba-hooray)
-    - [*WARP...What is it Good For?*](https://github.com/damienfranco/MLB_WARP_vs_Salary#warpwhat-is-it-good-for)
-- [**Questions We Are Looking to Answer**](https://github.com/damienfranco/MLB_WARP_vs_Salary#questions-we-are-looking-to-answer)
-- [**Our Null Hypothesis**](https://github.com/damienfranco/MLB_WARP_vs_Salary#our-null-hypothesis)
-- [**Technology and Methodology**](https://github.com/damienfranco/MLB_WARP_vs_Salary#technology-and-methodology)
-- [**Flow Chart**](https://github.com/damienfranco/MLB_WARP_vs_Salary#flow-chart)
-- [**Data**](https://github.com/damienfranco/MLB_WARP_vs_Salary#data)
-    - [*Data Sources*](https://github.com/damienfranco/MLB_WARP_vs_Salary#data-sources)
-    - [*ETL*](https://github.com/damienfranco/MLB_WARP_vs_Salary#etl)
-    - [*Data Caveats*](https://github.com/damienfranco/MLB_WARP_vs_Salary#data-caveats)
-- [**Communication**](https://github.com/damienfranco/MLB_WARP_vs_Salary#communication)
-- [**Machine Learning**](https://github.com/damienfranco/MLB_WARP_vs_Salary#machine-learning)
-    - [*Preliminary Data Preprocessing*](https://github.com/damienfranco/MLB_WARP_vs_Salary#preliminary-data-preprocessing)
-    - [*Preliminary Feature Engineering*](https://github.com/damienfranco/MLB_WARP_vs_Salary#preliminary-feature-engineering)
-    - [*How is Data Split Between Training and Testing Groups*](https://github.com/damienfranco/MLB_WARP_vs_Salary#how-is-data-split-betweein-training-and-testing-groups)
-    - [*Explanation of model choice*](https://github.com/damienfranco/MLB_WARP_vs_Salary#explanation-of-model-choice)
-- [**Sources**](https://github.com/damienfranco/MLB_WARP_vs_Salary#sources)
+<img align="right" width="480" height="480" src="https://s22927.pcdn.co/wp-content/uploads/2020/01/world-series-trophy.jpg">
 
+  
+- [**How Did We Get Here?**](#how-did-we-get-here)
+    - [*CBA Hooray?*](#cba-hooray)
+    - [*WARP...What is it Good For?*](#warpwhat-is-it-good-for)
+- [**Questions We Are Looking to Answer**](#questions-we-are-looking-to-answer)
+- [**Our Null Hypothesis**](#our-null-hypothesis)
+- [**Technology and Methodology**](#technology-and-methodology)
+- [**Flow Chart**](#flow-chart)
+- [**Data**](#data)
+    - [*Data Sources*](#data-sources)
+    - [*ETL*](#etl)
+    - [*Data Caveats*](#data-caveats)
+- [**Communication**](#communication)
+- [**Machine Learning**](#machine-learning)
+    - [*Preliminary Data Preprocessing*](#preliminary-data-preprocessing)
+    - [*Preliminary Feature Engineering*](#preliminary-feature-engineering)
+    - [*How is Data Split Between Training and Testing Groups*](#how-is-data-split-betweein-training-and-testing-groups)
+    - [*Explanation of model choice*](#explanation-of-model-choice)
+- [**Sources**](#sources)
 
 </details>
 
