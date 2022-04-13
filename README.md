@@ -38,7 +38,7 @@ We created an interactive dashboard using Tableau where you can see MLB Team WAR
     - [*Feature Engineering*](#feature-engineering)
     - [*How is Data Split Between Training and Testing Groups*](#how-is-data-split-between-training-and-testing-groups)
     - [*Machine Learning Results*](#machine-learning-results)
-- [Visualization](#visualization)
+- [**Visualization**](#visualization)
 - [**Sources**](#sources)
 
 </details>
