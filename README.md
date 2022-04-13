@@ -5,6 +5,8 @@
 # WARP vs Salary - A Dive into Player Value and Team Spending in MLB
 
 ## Visualization
+
+We created an interactive dashboard using Tableau where you can see MLB Team WARP and Salary side by side. Toggle between totals and seasonal stats to see how each team fared from 2000 to 2019.
 [**Click Here For Our Visualization**](https://public.tableau.com/app/profile/damien.franco/viz/MLBWARPvsSalary/WARPSalaryTotals)
 
 <p align="center">
