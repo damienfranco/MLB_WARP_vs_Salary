@@ -153,24 +153,57 @@ The `groupby()` function grouped the final joined table by their names, ids, tea
 ![MLB Salary WARP database](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/Screen%20Shot%202022-03-23%20at%207.40.38%20PM.png)
 
 ## Communcation
+
 The team is communicating through Slack and using Zoom and Google Meet for peer coding and live collaboration.
 
 ## Machine Learning
-The team is using a pair or machine learning sections in order to determine if success is tied more closely to team payroll, WARP, or another statistic.  
 
-### Preliminary Data Preprocessing
-After the construction of our database, we had more than 60 hitting, pitching, and fielding statistics that we will use measure the success of each athlete on each team in Major League Baseball over the past 20 years. We will total each statistic and group them by each of the 30 teams from the years 2000 - 2019*.  We also need to create a success factor to determine how well a team performed over the year.  That success factor will be our Y Variable with the retotaled 
+The team is using a pair or machine learning sections to determine if success is tied more closely to team payroll, WARP, or another statistic.
 
+### Data Preprocessing
+
+After the construction of our database, we had more than 30 hitting, pitching, and fielding statistics that we will use measure the success of each athlete on each team in Major League Baseball over the past 20 years. We will total each statistic and group them by each of the 30 teams from the years 2000 - 2019*. We will utilize wins and playoff appearances as our Y variable to determine the success of the team.
 *See Data Caveats
 
-### Preliminary Feature Engineering
-The first model we used was a principal component analysis which determined inter-relations between variables in the dataset. Specifically, it helped us create a subset of variables from our larger dataset which we could apply towards the next machine learning module.  Once we have our subset, we will apply that data intoa  Random Forest Identifier which will allow us to determine the level at which each x variable affects the Y Variable.
+
+### Feature Engineering
+
+The first model we used was a principal component analysis which determined inter-relations between variables in the dataset. Specifically, it helped us create a subset of variables from our larger dataset which we could apply towards the next machine learning module. Once we have our subset, we will apply that data into a Random Forest Classifier which will allow us to determine the level at which each X Variable affects the Y Variable.
+We believe that a random forest identifier is appropriate for this project because it produces better results, works well on large datasets, and can work with missing data by creating estimates for them. However, they can be limited by their inability to predict data outside of their current dataset. This is fine because we are not looking to predict future results. We are only looking to determine which variables are most effective in determining our Y variables.
+
 
 ### How is Data Split Between Training and Testing Groups
-We use sklearn to assign training and testing values to our X and Y variables, therefore, splitting them.
 
-### Explanation of model choice
-We believe that a random foreest identifier is appropriate for this project beacuse it produces better results, works well on large datasets, and can work with missing data by creating estimates for them. However, they can be limited by their inability to predict data outside of their current dataset. This is fine because we are not looking to predict future results.  We are only looking to determine which variables are most effective in determining our Y variables.
+The train-test split is used to evaluate the performance of a machine learning algorithm, and it is typically used for classification or regression problems
+Testing and training splits the data into two subsets.  The first is used to fit the model, and it is referred to as training. The second portion is applied to the machine learning model and used to make predictions and compared to the expected value.
+We use sklearn to assign training and testing values to our X and Y variables, therefore, splitting them.  The test size will contain 25% of the values while the train size will contain 75%
+
+![](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/data_training.png)
+
+### Machine Learning Results
+
+Through our PCA, we were able to determine that Team Payroll, WARP, and Runs had the largest overall effect on making the playoffs.
+In these box plots, the difference in the medians with these variables is much greater than any other variable in our data set.  From the PCA, we determined that WARP, Salary, and Runs most greatly affected a team's playoff chances.
+
+![](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/PCA_Payroll.png)
+
+![](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/PCA_WARP.png)
+
+![](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/PCA_runs.png)
+
+![](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/explained_variance.png)
+
+Using these variables, we tested to see if WARP and Runs were more effective than Team Payroll when it came to determining the success of the team.  We were able to confirm that WARP is the factor that most closely determines wins and playoff appearances.  
+
+![warp runs](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/Warp_Runs.png)
+
+![features rank](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/features_rank.png)
+
+One step further, we also determine runs were a more effective variable than team_salary when it came to determining the success of a team.
+
+![runsrank](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/runs_features_rank.png) 
+
+*See Data Caveats
 
 ## Sources
 [^1]: CBA Negotiations - https://www.bostonglobe.com/2021/11/03/sports/how-will-cba-negotiations-affect-baseballs-offseason/
