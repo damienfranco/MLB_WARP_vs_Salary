@@ -117,7 +117,7 @@ The stats and salary datasets came from two completely sources, using completely
 
 **ETL Figure 1: Stats dataset**
 <p align="center">
-  <img width="470" height="470" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/stats_csv.png">
+  <img width="673" height="159" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/stats_csv.png">
 </p>
 
 **ETL Figure 2: Salary dataset**
@@ -129,7 +129,7 @@ The stats and salary datasets came from two completely sources, using completely
 **ETL Figure 3:**
 
 <p align="center">
-  <img width="470" height="202" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/readme_duplicates.png">
+  <img width="1090" height="211" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/readme_duplicates.png">
 </p>
 
 Extra rows created containing duplicated salary data but having unique stats. In `season` 2016, Josh Fields appears twice, and has the same salary information but different pitching stats.
