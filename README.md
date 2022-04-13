@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/Presentation_Resources/Wrigley4k.JPG">
+  <img width="1100" height="400" src="https://i.redd.it/ctuaxotubqh31.jpg">
 </p>
 
 # WARP vs Salary - A Dive into Player Value and Team Spending in MLB
@@ -53,6 +53,10 @@ Why were all these thing’s issues? Ever since the Billy Beane Moneyball A's, o
 - With the adjustment in analysis of when players could get paid, free agents past their prime saw drops in their ability to make "premium money" by the time they reached free agency.
 
 Teams began to lose or "tank" in order to get as many top picks in the draft for multiple seasons prior to trying to win to create low salaried, competitive windows. Owners have challenged players on proof of this concept, while many others have admitted these tactics are how small market teams compete. Players challenge the market size concept as MLB teams have seen record profits. Major League Baseball has market size issues compared to other sports, as they do not have robust revenue sharing [^2]. While baseball is making about $9 Billion in revenue, all profits are tied to specific teams. There are discrepancies in revenues for teams like the Chicago Cubs versus the Pittsburgh Pirates. These discrepancies have empowered owners to justify some of these tactics as necessary to compete, as they would claim their market size would limit their ability to compete on top free agents.
+
+<p align="center">
+  <img width="470" height="202" src="https://www.gannett-cdn.com/presto/2022/03/11/USAT/5541044b-8fde-47bf-82cd-5101a9c8800a-AP_Baseball_Lockout.jpg?crop=4795,2021,x0,y374">
+</p>
 
 While not all these issues were directly addressed, players and the league agreed to a new CBA in March of 2022 after the longest lockout in the history of the sport [^3]. MLB teams conceded on increasing the luxury tax thresholds while also adding incentives for teams to promote their top players sooner. Only time will tell if these are enough to move the needle on this contentious matter.
 
@@ -111,17 +115,32 @@ The only free option for detailed MLB salary data that we found was on [Baseball
 
 The stats and salary datasets came from two completely sources, using completely separate processes for collection, and did not contain a common primary key that they could be joined on. The stats dataset contained a unique `player_id` (ETL Figure 1), that was absent in the salary data (ETL Figure 2). The tables were inner joined by player name, team name, and year. Extra records  were produced, either created by the lack of a primary key to join on, or by differences in how the two sources organized their data (ETL Figure 3). Simply using the `.drop_duplicates()` function from the Pandas library would not work because of the non-duplicated stats. The columns in the final dataset were grouped by the strings, and the `.agg()` function was applied to in order to keep the player salary data constant, but sum/average their stats (ETL Figure 4). This eliminated the duplicated player entries, while keeping their stats accurate.
 
-![Stats Table](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/stats_csv.png)
-ETL Figure 1: Stats dataset
+**ETL Figure 1: Stats dataset**
+<p align="center">
+  <img width="470" height="470" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/stats_csv.png">
+</p>
 
-![Salary Table](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/player_salaries.png)
-ETL Figure 2: Salary dataset
+**ETL Figure 2: Salary dataset**
 
-![Duplicates](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/readme_duplicates.png)
-ETL Figure 3: Extra rows created containing duplicated salary data but having unique stats. In `season` 2016, Josh Fields appears twice, and has the same salary information but different pitching stats.
+<p align="center">
+  <img width="470" height="202" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/player_salaries.png">
+</p>
 
-![Dropping Duplicates](https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/cleaning_duplicates.png)
-ETL Figure 4: The `groupby()` function grouped the final joined table by their names, ids, teams, positions, and season. The `.agg()` function took a dictionary defining each column as the key, and whether to keep the first (or last) record or sum/average the records together as the value.
+**ETL Figure 3:**
+
+<p align="center">
+  <img width="470" height="202" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/player_salaries.png">
+</p>
+
+Extra rows created containing duplicated salary data but having unique stats. In `season` 2016, Josh Fields appears twice, and has the same salary information but different pitching stats.
+
+**ETL Figure 4:** 
+
+<p align="center">
+  <img width="783" height="122" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/images/cleaning_duplicates.png">
+</p>
+
+The `groupby()` function grouped the final joined table by their names, ids, teams, positions, and season. The `.agg()` function took a dictionary defining each column as the key, and whether to keep the first (or last) record or sum/average the records together as the value.
 
 
 ### Data Caveats
