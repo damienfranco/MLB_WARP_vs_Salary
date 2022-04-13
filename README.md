@@ -79,7 +79,7 @@ The above looks like a lot, doesnt it? So what does it mean?
 #### WARP MADE EASY
 
 <img align="left" width="150" height="150" src="https://github.com/damienfranco/MLB_WARP_vs_Salary/blob/main/Presentation_Resources/WAR%20Chart.webp">
-**WARP** measures a players value in all aspects of the game in order to determine if how many "wins" that player is worth on the field vs the average player: 
+**WARP** measures a players value in all aspects of the game in order to determine how many "wins" that player is worth on the field vs the average player: 
 
 - Negative WARP means a player is costing you wins
 - 0 WARP means the player is average
